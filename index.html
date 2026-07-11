@@ -379,11 +379,11 @@
                 </ul>
             </div>
 
-           
-                <button class="btn btn-warning fw-bold px-4" data-bs-toggle="modal" data-bs-target="#propertyModal">
-                    Sales Form
-                </button>
-          
+
+            <button class="btn btn-warning fw-bold px-4" data-bs-toggle="modal" data-bs-target="#propertyModal">
+                Sales Form
+            </button>
+
 
             <div class="sidebar-contact">
                 <a class="contact-info" href="tel:+1234567890">
@@ -406,78 +406,231 @@
 
 
     <div class="modal fade" id="propertyModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
 
             <div class="modal-content">
 
                 <div class="modal-header bg-primary text-white">
 
                     <h4 class="modal-title">
-                        Property Purchase Form
+                        Sales Form
+                        <span class="sub">Eket Golf Estate — A Home in a Resort</span>
                     </h4>
 
-                    <button class="btn-close btn-close-white" data-bs-dismiss="modal">
-                    </button>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
 
                 </div>
 
                 <div class="modal-body">
 
-                    <form>
+                    <form id="estateForm" class="needs-validation" novalidate>
 
                         <div class="row g-3">
 
-                            <div class="col-md-6">
-                                <label class="form-label">Full Name</label>
-                                <input type="text" class="form-control" placeholder="Enter your full name" required>
+                            <!-- 01 Particulars -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">01</span>
+                                    <div class="txt">
+                                        <h6>Particulars of Client(s)</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Surname</label>
+                                        <input type="text" id="surname" class="form-control" placeholder="e.g. Udoh"
+                                            required>
+                                        <div class="invalid-feedback">Please enter the surname.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Other Names</label>
+                                        <input type="text" id="otherNames" class="form-control"
+                                            placeholder="e.g. Ememobong Grace" required>
+                                        <div class="invalid-feedback">Please enter other names.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Title</label>
+                                        <input type="text" id="title" class="form-control"
+                                            placeholder="e.g. Mr / Mrs / Chief" required>
+                                        <div class="invalid-feedback">Please enter a title.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Position</label>
+                                        <input type="text" id="position" class="form-control"
+                                            placeholder="e.g. Managing Director" required>
+                                        <div class="invalid-feedback">Please enter a position.</div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <label class="form-label">Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="08012345678" required>
+                            <!-- 02 Company -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">02</span>
+                                    <div class="txt">
+                                        <h6>Company / Business Information</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label">Name of Company/Firm <span
+                                                class="opt">(optional)</span></label>
+                                        <input type="text" id="companyName" class="form-control"
+                                            placeholder="Company or firm name">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Business Address <span
+                                                class="opt">(optional)</span></label>
+                                        <textarea class="form-control" id="businessAddress" rows="2"
+                                            placeholder="Street, city, state"></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">P.O Box</label>
+                                        <input type="text" id="poBox" class="form-control" placeholder="P.O Box number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Post Office Box <span class="opt">(if
+                                                any)</span></label>
+                                        <input type="text" id="postBox" class="form-control"
+                                            placeholder="Post office box">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control" placeholder="example@gmail.com">
+                            <!-- 03 Contact -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">03</span>
+                                    <div class="txt">
+                                        <h6>Contact Information</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Telephone Number</label>
+                                        <input type="tel" id="telephone" class="form-control" placeholder="08012345678"
+                                            required>
+                                        <div class="invalid-feedback">Please enter a telephone number.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Mobile</label>
+                                        <input type="tel" id="mobile" class="form-control" placeholder="08012345678"
+                                            required>
+                                        <div class="invalid-feedback">Please enter a mobile number.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="example@gmail.com" required>
+                                        <div class="invalid-feedback">Please enter a valid email.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Business Email <span
+                                                class="opt">(optional)</span></label>
+                                        <input type="email" id="businessEmail" class="form-control"
+                                            placeholder="business@example.com">
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <label class="form-label">Property Type</label>
+                            <!-- 04 Residential -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">04</span>
+                                    <div class="txt">
+                                        <h6>Residential Information</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
 
-                                <select class="form-select">
-
-                                    <option>Select Property</option>
-                                    <option>Residential Plot</option>
-                                    <option>Commercial Plot</option>
-                                    <option>Farmland</option>
-                                    <option>Estate Land</option>
-
-                                </select>
-
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label">Residential Address</label>
+                                        <textarea class="form-control" id="residentialAddress" rows="2"
+                                            placeholder="Street, city, state" required></textarea>
+                                        <div class="invalid-feedback">Please enter your residential address.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Address for Mailing <span
+                                                class="opt">(optional)</span></label>
+                                        <textarea class="form-control" id="mailingAddress" rows="2"
+                                            placeholder="If different from residential address"></textarea>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <label class="form-label">Preferred Location</label>
+                            <!-- 05 Property -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">05</span>
+                                    <div class="txt">
+                                        <h6>Property Details</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
 
-                                <input type="text" class="form-control" placeholder="Location">
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label">Names to be used on Title Document(s)</label>
+                                        <input type="text" id="titleNames" class="form-control"
+                                            placeholder="Full legal name(s) for title" required>
+                                        <div class="invalid-feedback">Please enter the name(s) for the title document.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Property Designation</label>
+                                        <input type="text" id="propertyDesignation" class="form-control"
+                                            placeholder="e.g. Plot 14, Fairway Close" required>
+                                        <div class="invalid-feedback">Please enter the property designation.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Property Size</label>
+                                        <input type="text" id="propertySize" class="form-control"
+                                            placeholder="e.g. 600 sqm" required>
+                                        <div class="invalid-feedback">Please enter the property size.</div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-md-6">
-                                <label class="form-label">Budget</label>
+                            <!-- 06 Confirmation -->
+                            <div class="col-12 form-section mb-0">
+                                <div class="form-section-label">
+                                    <span class="num">06</span>
+                                    <div class="txt">
+                                        <h6>Date & Confirmation</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
 
-                                <input type="text" class="form-control" placeholder="₦5,000,000">
-                            </div>
-
-                            <div class="col-12">
-
-                                <label class="form-label">
-                                    Additional Information
-                                </label>
-
-                                <textarea class="form-control" rows="4"
-                                    placeholder="Tell us more about the property you're looking for..."></textarea>
-
+                                <div class="row g-3">
+                                    <div class="col-md-5">
+                                        <label class="form-label">Date</label>
+                                        <input type="date" id="date" class="form-control" required>
+                                        <div class="invalid-feedback">Please select a date.</div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="confirm-block">
+                                            <div class="q">I am ready to purchase a property with <b>Eket Golf
+                                                    Estate.</b></div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="clientConfirmation"
+                                                    id="clientYes" value="Yes" required>
+                                                <label class="form-check-label" for="clientYes">Yes</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="clientConfirmation"
+                                                    id="clientNo" value="No" required>
+                                                <label class="form-check-label" for="clientNo">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -486,15 +639,26 @@
 
                 </div>
 
-                <div class="modal-footer">
+                <div class="modal-footer flex-column align-items-stretch">
 
-                    <button class="btn btn-secondary" data-bs-dismiss="modal">
-                        Close
-                    </button>
+                    <div class="accuracy-note mb-3">
+                        Please ensure all information provided above is accurate before submitting. Details entered here
+                        will be used to prepare your official purchase and title documents.
+                    </div>
 
-                    <button class="btn btn-success">
-                        Submit Request
-                    </button>
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                        <div id="formMessage" class="fw-semibold"></div>
+
+                        <div class="d-flex gap-2 ms-auto">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                Close
+                            </button>
+
+                            <button class="btn btn-success" type="submit" form="estateForm">
+                                Submit Request
+                            </button>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -540,6 +704,32 @@
                 behavior: "smooth"
             });
 
+        });
+    </script>
+
+
+    <script>
+        const form = document.getElementById('estateForm');
+        const msg = document.getElementById('formMessage');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                msg.textContent = 'Please complete all required fields.';
+                msg.style.color = '#B3413A';
+                const firstInvalid = form.querySelector(':invalid');
+                if (firstInvalid) firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+
+            form.classList.add('was-validated');
+            msg.style.color = '#265C46';
+            msg.textContent = 'Submitted successfully — thank you.';
+           
+            setTimeout(() => { bootstrap.Modal.getInstance(document.getElementById('propertyModal')).hide(); form.reset(); form.classList.remove('was-validated'); msg.textContent=''; }, 1200);
         });
     </script>
 
