@@ -54,8 +54,8 @@
 
  .brand-mark {
      position: relative;
-     width: 120px;
-     height: 120px;
+     width: 140px;
+     height: 140px;
      flex: 0 0 90px;
  }
 
@@ -97,14 +97,14 @@
 
  .brand-copy small {
      display: block;
-     font-size: 19px;
+     font-size: 25px;
      font-weight: 800;
      color: #111827;
  }
 
  .brand-copy strong {
      display: block;
-     font-size: 19px;
+     font-size: 25px;
      color: #07285e;
  }
 
@@ -1696,7 +1696,7 @@ NEWSLETTER
 
  .xg-footer-heading {
 
-     font-size: 20px;
+     font-size: 28px;
      font-weight: 800;
      margin-bottom: 30px;
      color: #0b2545;
@@ -1708,7 +1708,6 @@ NEWSLETTER
      list-style: none;
      padding: 0;
      margin: 0;
-    
 
  }
 
@@ -1722,7 +1721,7 @@ NEWSLETTER
 
      text-decoration: none;
      color: #6c757d;
-     font-size: 19px;
+     font-size: 18px;
      font-weight: 600;
      transition: .3s;
 
