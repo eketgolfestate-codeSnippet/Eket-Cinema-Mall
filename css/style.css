@@ -1041,7 +1041,7 @@
  #propertyModal .modal-title {
      font-family: Arial, Helvetica, sans-serif;
      font-weight: bolder;
-     font-size: 2.5rem;
+     font-size: 1.5rem;
      letter-spacing: -0.01em;
      position: relative;
      z-index: 1;
@@ -1055,7 +1055,7 @@
      font-family: Arial, Helvetica, sans-serif;
      /* font-style: italic; */
      font-weight: bolder;
-     font-size: 2.1rem;
+     font-size: 1.5rem;
      color: var(--danger);
      margin-top: 2px;
  }
