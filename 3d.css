@@ -145,3 +145,24 @@
     }
 
 }
+
+
+
+
+
+.card{
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+}
+
+iframe{
+    border:none;
+}
+
+.ratio{
+    background:#000;
+}

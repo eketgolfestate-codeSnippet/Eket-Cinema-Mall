@@ -990,12 +990,12 @@
 
  /* ============ Scoped identity for #propertyModal only ============ */
  #propertyModal {
-     --fairway-deep: #173A2E;
+     --fairway-deep: #0d6efd;
      --fairway: #265C46;
      --fairway-light: #3F7A5F;
      --cream: #F6F3EA;
-     --gold: #B8923E;
-     --gold-light: #D9BE7D;
+     --gold: #42bd1c;
+     --gold-light: #0d6efd;
      --ink: #181A17;
      --line: #DEDACB;
      font-family: 'Work Sans', sans-serif;
@@ -1005,7 +1005,7 @@
  #propertyModal .modal-content {
      border: none;
      border-radius: 0;
-     box-shadow: 0 40px 80px -30px rgba(23, 58, 46, 0.45);
+     box-shadow: 0 40px 80px -30px rgba(25, 23, 58, 0.45);
      overflow: hidden;
  }
 
@@ -1039,21 +1039,24 @@
  }
 
  #propertyModal .modal-title {
-     font-family: 'Fraunces', serif;
+     font-family: Arial, Helvetica, sans-serif;
      font-weight: bolder;
-     font-size: 1.5rem;
+     font-size: 2.5rem;
      letter-spacing: -0.01em;
      position: relative;
      z-index: 1;
+     /* border: 2px solid red; */
+     width: 100%;
+     text-align: center;
  }
 
  #propertyModal .modal-title .sub {
-     display: block;
-     font-family: 'Fraunces', serif;
-     font-style: italic;
-     font-weight: 400;
-     font-size: .9rem;
-     color: var(--gold-light);
+     /* display: block; */
+     font-family: Arial, Helvetica, sans-serif;
+     /* font-style: italic; */
+     font-weight: bolder;
+     font-size: 2.1rem;
+     color: var(--danger);
      margin-top: 2px;
  }
 
@@ -1072,6 +1075,11 @@
      margin-top: 2px;
      cursor: pointer;
      transition: background-color .18s ease, transform .18s ease, border-color .18s ease;
+ }
+
+ #propertyModal .brand-form {
+     width: 60px;
+     height: 60px;
  }
 
  #propertyModal .btn-close:hover {
