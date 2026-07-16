@@ -161,8 +161,8 @@ h3,
 .smk-suite-eyebrow {
     display: inline-block;
     color: var(--accent);
-    font-weight: 700;
-    font-size: .75rem;
+    font-weight: bolder;
+    font-size: 20px;
     letter-spacing: .08em;
     text-transform: uppercase;
     margin-bottom: .25rem;
