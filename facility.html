@@ -633,7 +633,7 @@
     </section>
 
 
-    <button id="backToTopBtn" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
+    <button id="backToTopBtn"></button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -646,8 +646,8 @@
         const services = [
             { icon: 'bi-building-gear', img: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=800&auto=format&fit=crop', title: 'Building Maintenance', desc: 'Structural, mechanical, and general upkeep on a fixed schedule.' },
             { icon: 'bi-lightning-charge-fill', img: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop', title: 'Electrical Maintenance', desc: 'Licensed electricians for repairs, upgrades, and safety checks.' },
-            { icon: 'bi-droplet-fill', img: 'https://images.unsplash.com/photo-1607472829332-c1eaa48d2e30?q=80&w=800&auto=format&fit=crop', title: 'Plumbing Services', desc: 'Leak detection, fixture repair, and drainage maintenance.' },
-            { icon: 'bi-fan', img: 'https://images.unsplash.com/photo-1621905252472-e8de5e2b0ae1?q=80&w=800&auto=format&fit=crop', title: 'HVAC Management', desc: 'Climate systems serviced to keep occupants comfortable year-round.' },
+            { icon: 'bi-droplet-fill', img: 'https://images.unsplash.com/photo-1676210133055-eab6ef033ce3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGx1bWJlciUyMHdvcmt8ZW58MHx8MHx8fDA%3D', title: 'Plumbing Services', desc: 'Leak detection, fixture repair, and drainage maintenance.' },
+            { icon: 'bi-fan', img: 'https://media.istockphoto.com/id/2155457708/photo/group-of-businessmen-and-investors-discuss-investing-in-real-estate-and-jointly-plan.webp?a=1&b=1&s=612x612&w=0&k=20&c=JpzfGjeQBQNiYdcGMGB7CQpKUs5YACqLQO-9PgvmEo0=', title: 'HVAC Management', desc: 'Climate systems serviced to keep occupants comfortable year-round.' },
             { icon: 'bi-tree-fill', img: 'https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=800&auto=format&fit=crop', title: 'Landscape Maintenance', desc: 'Grounds, gardens, and exterior spaces kept presentation-ready.' },
             { icon: 'bi-stars', img: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop', title: 'Cleaning & Janitorial', desc: 'Daily and deep-cleaning programs for common and private areas.' },
             { icon: 'bi-trash3-fill', img: 'https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=800&auto=format&fit=crop', title: 'Waste Management', desc: 'Scheduled collection, recycling coordination, and site sanitation.' },
@@ -720,9 +720,6 @@
             el.textContent = el.dataset.static;
         });
     </script>
-</body>
-
-</html>
 
 
 
@@ -732,43 +729,43 @@
 
 
 
-<footer class="xg-footer-section">
+    <footer class="xg-footer-section">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="row gy-5">
+            <div class="row gy-5">
 
-            <!-- Company Info -->
+                <!-- Company Info -->
 
-            <div class="col-lg-4 col-md-12">
+                <div class="col-lg-4 col-md-12">
 
-                <h2 class="fw-bolder">Eket Cinema Mall.</h2>
+                    <h2 class="fw-bolder">Eket Cinema Mall.</h2>
 
-                <img src="/images/IMG-20260713-WA0003-removebg-preview.png" class="xg-footer-logo img-fluid"
-                    alt="Eket Cinema Logo">
+                    <img src="/images/IMG-20260713-WA0003-removebg-preview.png" class="xg-footer-logo img-fluid"
+                        alt="Eket Cinema Logo">
 
-                <div class="xg-address-box">
+                    <div class="xg-address-box">
 
-                    <div class="xg-address-icon">
-                        <i class="bi bi-geo-alt-fill"></i>
+                        <div class="xg-address-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+
+                        <div>
+
+                            <h5 class="xg-address-title">
+                                Our Address
+                            </h5>
+
+                            <p class="xg-address-text">
+                                Plot 100 Eket Boulevard, Eket Golf Estate,
+                                Eket Edebuk, Akwa Ibom State.
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <div>
-
-                        <h5 class="xg-address-title">
-                            Our Address
-                        </h5>
-
-                        <p class="xg-address-text">
-                            Plot 100 Eket Boulevard, Eket Golf Estate,
-                            Eket Edebuk, Akwa Ibom State.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <!-- <div class="xg-contact-card">
+                    <!-- <div class="xg-contact-card">
 
                         <div class="xg-phone-circle">
 
@@ -786,600 +783,603 @@
 
                     </div> -->
 
-            </div>
+                </div>
 
-            <!-- Useful Links -->
+                <!-- Useful Links -->
 
-            <div class="col-lg-2 col-6">
+                <div class="col-lg-2 col-6">
 
-                <h4 class="xg-footer-heading">
-                    Useful Links
-                </h4>
+                    <h4 class="xg-footer-heading">
+                        Useful Links
+                    </h4>
 
-                <ul class="xg-footer-list">
+                    <ul class="xg-footer-list">
 
-                    <li><a href="#">Our Shop</a></li>
+                        <li><a href="#">Our Shop</a></li>
 
-                    <li><a href="#">Services</a></li>
+                        <li><a href="#">Services</a></li>
 
-                    <li><a href="#">News</a></li>
+                        <li><a href="#">News</a></li>
 
-                    <li><a href="#">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
 
-                </ul>
+                    </ul>
 
-            </div>
+                </div>
 
-            <!-- Support -->
+                <!-- Support -->
 
-            <div class="col-lg-2 col-6">
+                <div class="col-lg-2 col-6">
 
-                <h4 class="xg-footer-heading">
-                    Support
-                </h4>
+                    <h4 class="xg-footer-heading">
+                        Support
+                    </h4>
 
-                <ul class="xg-footer-list">
+                    <ul class="xg-footer-list">
 
-                    <li><a href="#">FAQs</a></li>
+                        <li><a href="#">FAQs</a></li>
 
-                    <li><a href="#">Purchases</a></li>
+                        <li><a href="#">Purchases</a></li>
 
-                    <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
 
-                    <li><a href="#">Report</a></li>
+                        <li><a href="#">Report</a></li>
 
-                </ul>
+                    </ul>
 
-            </div>
+                </div>
 
-            <!-- Information -->
+                <!-- Information -->
 
-            <div class="col-lg-2 col-6">
+                <div class="col-lg-2 col-6">
 
-                <h4 class="xg-footer-heading">
-                    Information
-                </h4>
+                    <h4 class="xg-footer-heading">
+                        Information
+                    </h4>
 
-                <ul class="xg-footer-list">
+                    <ul class="xg-footer-list">
 
-                    <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
 
-                    <li><a href="#">Facility Management</a></li>
+                        <li><a href="#">Facility Management</a></li>
 
-                    <li><a href="#">Suites</a></li>
+                        <li><a href="#">Suites</a></li>
 
-                    <li><a href="#">Vendor Shop</a></li>
+                        <li><a href="#">Vendor Shop</a></li>
 
-                </ul>
+                    </ul>
 
-            </div>
+                </div>
 
-            <!-- Services -->
+                <!-- Services -->
 
-            <div class="col-lg-2 col-6">
+                <div class="col-lg-2 col-6">
 
-                <h4 class="xg-footer-heading">
-                    Services
-                </h4>
+                    <h4 class="xg-footer-heading">
+                        Services
+                    </h4>
 
-                <ul class="xg-footer-list">
+                    <ul class="xg-footer-list">
 
-                    <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
 
-                    <li><a href="#">Cinema</a></li>
+                        <li><a href="#">Cinema</a></li>
 
-                    <li><a href="#">Shops</a></li>
+                        <li><a href="#">Shops</a></li>
 
-                    <li><a href="/3dgallery.html">3D Gallery</a></li>
+                        <li><a href="/3dgallery.html">3D Gallery</a></li>
 
-                </ul>
+                    </ul>
 
-            </div>
+                </div>
 
-            <h2 class="text-center fw-bolder fs-1">Shop <span class="text-danger">.Movies</span>.Enjoy</h2>
-
-        </div>
-
-        <div
-            style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw;padding:0;">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7953.771824429865!2d7.941771137166556!3d4.614430925545856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067dd0048b3fa07%3A0xd2f2b13cb7989099!2sEket%20Golf%20Estate!5e0!3m2!1sen!2sng!4v1784377353079!5m2!1sen!2sng"
-                style="width:100%; height:450px; border:0; display:block;">
-            </iframe>
-        </div>
-
-        <hr class="xg-divider">
-
-        <div class="xg-footer-bottom">
-
-            <p>
-                © 2026 Eket Cinema Mall. All Rights Reserved.
-            </p>
-
-            <div class="xg-social-icons">
-
-                <a href="#"><i class="bi bi-facebook"></i></a>
-
-                <a href="#"><i class="bi bi-instagram"></i></a>
-
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
-
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-
+                <h2 class="text-center fw-bolder fs-1">Shop <span class="text-danger">.Movies</span>.Enjoy</h2>
 
             </div>
 
+            <div
+                style="width:100vw; position:relative; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw;padding:0;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7953.771824429865!2d7.941771137166556!3d4.614430925545856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1067dd0048b3fa07%3A0xd2f2b13cb7989099!2sEket%20Golf%20Estate!5e0!3m2!1sen!2sng!4v1784377353079!5m2!1sen!2sng"
+                    style="width:100%; height:450px; border:0; display:block;">
+                </iframe>
+            </div>
+
+            <hr class="xg-divider">
+
+            <div class="xg-footer-bottom">
+
+                <p>
+                    © 2026 Eket Cinema Mall. All Rights Reserved.
+                </p>
+
+                <div class="xg-social-icons">
+
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+
+
+                </div>
+
+
+            </div>
 
         </div>
 
-    </div>
+    </footer>
 
-</footer>
-
-<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-    <div class="offcanvas-header">
-        <a class="brand side-brand" href="/dashboard.html" id="mobileMenuLabel">
-            <img class="brand-mark" src="/images/IMG-20260713-WA0003-removebg-preview.png" alt="Xtra Gadgets logo">
-            <span class="brand-copy">
-                <small>Eket Cinema</small>
-                <strong>Mall<span class="dot">.</span></strong>
-            </span>
-        </a>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <form class="search-box w-100 mb-4" role="search">
-            <i data-lucide="search" width="20" height="20"></i>
-            <input type="search" aria-label="Search products" placeholder="Search ...">
-        </form>
-
-        <nav class="sidebar-nav" aria-label="Mobile navigation">
-            <a href="/dashboard.html">Home <i data-lucide="chevron-right" width="16" height="16"></i></a>
-            <a href="/cinema.html">Cinema <i data-lucide="chevron-right" width="16" height="16"></i></a>
-            <a href="#">Facility Management <i data-lucide="chevron-right" width="16" height="16"></i></a>
-            <a href="/3dgallery.html">3D Gallery <i data-lucide="chevron-right" width="16" height="16"></i></a>
-            <a href="/suites.html">Shops <i data-lucide="chevron-down" width="16" height="16"></i></a>
-        </nav>
-
-        <div class="side-section">
-            <h4>SUITES</h4>
-            <ul>
-                <li><a href="/suites.html?#suite1">Suite 1</a></li>
-                <li><a href="/suites.html?#suite2">Suite 2</a></li>
-                <li><a href="/suites.html?#suite3">Suite 3</a></li>
-                <li><a href="/suites.html?#suite4">Suite 4</a></li>
-                <li><a href="/suites.html?#suite5">Suite 5</a></li>
-                <li><a href="/suites.html?#suite6">Suite 6</a></li>
-                <li><a href="/suites.html?#suite7">Suite 7</a></li>
-                <li><a href="/suites.html?#suite8">Suite 8</a></li>
-                <li><a href="/suites.html?#suite9">Suite 9</a></li>
-                <li><a href="/suites.html?#suite10">Suite 10</a></li>
-
-            </ul>
-        </div>
-
-        <div class="side-section">
-            <h4>BRANDS</h4>
-            <ul>
-                <li><a href="/suites.html?#suite1">Supermarket (Sold)</a></li>
-                <li><a href="/suites.html?#suite2">Gene Bendi (Prospose)</a></li>
-                <li><a href="/suites.html?#suite3">LG (Prospose)</a></li>
-                <li><a href="/suites.html?#suite4">R n D Palace (Prospose)</a></li>
-                <li><a href="/suites.html?#suite5">Royaline Technology (Prospose)</a></li>
-                <li><a href="/suites.html?#suite6">Twins Apparel Store (Prospose)</a></li>
-                <li><a href="/suites.html?#suite7">Clonevirgin (Prospose)</a></li>
-                <li><a href="/suites.html?#suite8">Over $500</a></li>
-                <li><a href="/suites.html?#suite9">Over $500</a></li>
-                <li><a href="/suites.html?#suite10">9ja Cinema Grill</a></li>
-            </ul>
-        </div>
-
-        <div class="side-section">
-            <h4>CATEGORIES</h4>
-            <ul>
-                <li><a href="/suites.html?#suite1">Groceries</a></li>
-                <li><a href="/suites.html?#suite2">Footwears</a></li>
-                <li><a href="/suites.html?#suite3">Electronics</a></li>
-                <li><a href="/suites.html?#suite4">Sport Lifestyle Boutique</a></li>
-                <li><a href="/suites.html?#suite5">Smart Phone & Gadgets</a></li>
-                <li><a href="/suites.html?#suite6">Fashion & Apparel</a></li>
-                <li><a href="/suites.html?#suite7">Kids & Motherhood</a></li>
-                <li><a href="/suites.html?#suite8">Tablets</a></li>
-                <li><a href="/suites.html?#suite9">Tablets</a></li>
-                <li><a href="/suites.html?#suite10">Movies House</a></li>
-
-            </ul>
-        </div>
-
-
-        <button class="btn btn-warning fw-bold px-4" data-bs-toggle="modal" data-bs-target="#propertyModal">
-            Sales Form
-        </button>
-
-
-        <div class="sidebar-contact">
-            <a class="contact-info" href="tel:+1234567890">
-                <i data-lucide="phone-call" width="18" height="18"></i>
-                +2348037719003
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+            <a class="brand side-brand" href="/dashboard.html" id="mobileMenuLabel">
+                <img class="brand-mark" src="/images/IMG-20260713-WA0003-removebg-preview.png" alt="Xtra Gadgets logo">
+                <span class="brand-copy">
+                    <small>Eket Cinema</small>
+                    <strong>Mall<span class="dot">.</span></strong>
+                </span>
             </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </div>
-</div>
+        <div class="offcanvas-body">
+            <form class="search-box w-100 mb-4" role="search">
+                <i data-lucide="search" width="20" height="20"></i>
+                <input type="search" aria-label="Search products" placeholder="Search ...">
+            </form>
 
-<button id="backToTop" aria-label="Go to top">
-    ↑
-</button>
+            <nav class="sidebar-nav" aria-label="Mobile navigation">
+                <a href="/dashboard.html">Home <i data-lucide="chevron-right" width="16" height="16"></i></a>
+                <a href="/cinema.html">Cinema <i data-lucide="chevron-right" width="16" height="16"></i></a>
+                <a href="#">Facility Management <i data-lucide="chevron-right" width="16" height="16"></i></a>
+                <a href="/3dgallery.html">3D Gallery <i data-lucide="chevron-right" width="16" height="16"></i></a>
+                <a href="/suites.html">Shops <i data-lucide="chevron-down" width="16" height="16"></i></a>
+            </nav>
 
+            <div class="side-section">
+                <h4>SUITES</h4>
+                <ul>
+                    <li><a href="/suites.html?#suite1">Suite 1</a></li>
+                    <li><a href="/suites.html?#suite2">Suite 2</a></li>
+                    <li><a href="/suites.html?#suite3">Suite 3</a></li>
+                    <li><a href="/suites.html?#suite4">Suite 4</a></li>
+                    <li><a href="/suites.html?#suite5">Suite 5</a></li>
+                    <li><a href="/suites.html?#suite6">Suite 6</a></li>
+                    <li><a href="/suites.html?#suite7">Suite 7</a></li>
+                    <li><a href="/suites.html?#suite8">Suite 8</a></li>
+                    <li><a href="/suites.html?#suite9">Suite 9</a></li>
+                    <li><a href="/suites.html?#suite10">Suite 10</a></li>
 
-<a href="https://wa.me/2348037719003?text=Hello,%20I'm%20interested%20in%20your%20products." class="whatsapp-float"
-    target="_blank" aria-label="Chat with us on WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-</a>
-
-
-<div class="modal fade" id="propertyModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
-
-        <div class="modal-content">
-
-            <div class="modal-header bg-primary text-white">
-                <img class="brand-form" src="/images/IMG-20260713-WA0003-removebg-preview.png" alt="eket cinema logo">
-                <h4 class="modal-title">
-                    Sales Form,
-                    <span class="sub">Eket Cinema Mall.</span>
-                </h4>
-
-                <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-
+                </ul>
             </div>
 
-            <div class="modal-body">
+            <div class="side-section">
+                <h4>BRANDS</h4>
+                <ul>
+                    <li><a href="/suites.html?#suite1">Supermarket (Sold)</a></li>
+                    <li><a href="/suites.html?#suite2">Gene Bendi (Prospose)</a></li>
+                    <li><a href="/suites.html?#suite3">LG (Prospose)</a></li>
+                    <li><a href="/suites.html?#suite4">R n D Palace (Prospose)</a></li>
+                    <li><a href="/suites.html?#suite5">Royaline Technology (Prospose)</a></li>
+                    <li><a href="/suites.html?#suite6">Twins Apparel Store (Prospose)</a></li>
+                    <li><a href="/suites.html?#suite7">Clonevirgin (Prospose)</a></li>
+                    <li><a href="/suites.html?#suite8">Over $500</a></li>
+                    <li><a href="/suites.html?#suite9">Over $500</a></li>
+                    <li><a href="/suites.html?#suite10">9ja Cinema Grill</a></li>
+                </ul>
+            </div>
 
-                <form id="estateForm" class="needs-validation" novalidate>
+            <div class="side-section">
+                <h4>CATEGORIES</h4>
+                <ul>
+                    <li><a href="/suites.html?#suite1">Groceries</a></li>
+                    <li><a href="/suites.html?#suite2">Footwears</a></li>
+                    <li><a href="/suites.html?#suite3">Electronics</a></li>
+                    <li><a href="/suites.html?#suite4">Sport Lifestyle Boutique</a></li>
+                    <li><a href="/suites.html?#suite5">Smart Phone & Gadgets</a></li>
+                    <li><a href="/suites.html?#suite6">Fashion & Apparel</a></li>
+                    <li><a href="/suites.html?#suite7">Kids & Motherhood</a></li>
+                    <li><a href="/suites.html?#suite8">Tablets</a></li>
+                    <li><a href="/suites.html?#suite9">Tablets</a></li>
+                    <li><a href="/suites.html?#suite10">Movies House</a></li>
 
-                    <div class="row g-3">
+                </ul>
+            </div>
 
-                        <!-- 01 Particulars -->
-                        <div class="col-12 form-section">
-                            <div class="form-section-label">
-                                <span class="num">01</span>
-                                <div class="txt">
-                                    <h6>Particulars of Client(s)</h6>
-                                </div>
-                                <span class="rule"></span>
-                            </div>
 
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label">Surname</label>
-                                    <input type="text" id="surname" class="form-control" placeholder="e.g. Udoh"
-                                        required>
-                                    <div class="invalid-feedback">Please enter the surname.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Other Names</label>
-                                    <input type="text" id="otherNames" class="form-control"
-                                        placeholder="e.g. Ememobong Grace" required>
-                                    <div class="invalid-feedback">Please enter other names.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Title</label>
-                                    <input type="text" id="title" class="form-control"
-                                        placeholder="e.g. Mr / Mrs / Chief" required>
-                                    <div class="invalid-feedback">Please enter a title.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Position</label>
-                                    <input type="text" id="position" class="form-control"
-                                        placeholder="e.g. Managing Director" required>
-                                    <div class="invalid-feedback">Please enter a position.</div>
-                                </div>
-                            </div>
-                        </div>
+            <button class="btn btn-warning fw-bold px-4" data-bs-toggle="modal" data-bs-target="#propertyModal">
+                Sales Form
+            </button>
 
-                        <!-- 02 Company -->
-                        <div class="col-12 form-section">
-                            <div class="form-section-label">
-                                <span class="num">02</span>
-                                <div class="txt">
-                                    <h6>Company / Business Information</h6>
-                                </div>
-                                <span class="rule"></span>
-                            </div>
 
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <label class="form-label">Name of Company/Firm <span
-                                            class="opt">(optional)</span></label>
-                                    <input type="text" id="companyName" class="form-control"
-                                        placeholder="Company or firm name">
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label">Business Address <span
-                                            class="opt">(optional)</span></label>
-                                    <textarea class="form-control" id="businessAddress" rows="2"
-                                        placeholder="Street, city, state"></textarea>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">P.O Box</label>
-                                    <input type="text" id="poBox" class="form-control" placeholder="P.O Box number">
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Post Office Box <span class="opt">(if
-                                            any)</span></label>
-                                    <input type="text" id="postBox" class="form-control" placeholder="Post office box">
-                                </div>
-                            </div>
-                        </div>
+            <div class="sidebar-contact">
+                <a class="contact-info" href="tel:+1234567890">
+                    <i data-lucide="phone-call" width="18" height="18"></i>
+                    +2348037719003
+                </a>
+            </div>
+        </div>
+    </div>
 
-                        <!-- 03 Contact -->
-                        <div class="col-12 form-section">
-                            <div class="form-section-label">
-                                <span class="num">03</span>
-                                <div class="txt">
-                                    <h6>Contact Information</h6>
-                                </div>
-                                <span class="rule"></span>
-                            </div>
+    <button id="backToTop" aria-label="Go to top">
+        ↑
+    </button>
 
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label">Telephone Number</label>
-                                    <input type="tel" id="telephone" class="form-control" placeholder="08012345678"
-                                        required>
-                                    <div class="invalid-feedback">Please enter a telephone number.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Mobile</label>
-                                    <input type="tel" id="mobile" class="form-control" placeholder="08012345678"
-                                        required>
-                                    <div class="invalid-feedback">Please enter a mobile number.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="example@gmail.com"
-                                        required>
-                                    <div class="invalid-feedback">Please enter a valid email.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Business Email <span class="opt">(optional)</span></label>
-                                    <input type="email" id="businessEmail" class="form-control"
-                                        placeholder="business@example.com">
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- 04 Residential -->
-                        <div class="col-12 form-section">
-                            <div class="form-section-label">
-                                <span class="num">04</span>
-                                <div class="txt">
-                                    <h6>Residential Information</h6>
-                                </div>
-                                <span class="rule"></span>
-                            </div>
+    <a href="https://wa.me/2348037719003?text=Hello,%20I'm%20interested%20in%20your%20products." class="whatsapp-float"
+        target="_blank" aria-label="Chat with us on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
 
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <label class="form-label">Residential Address</label>
-                                    <textarea class="form-control" id="residentialAddress" rows="2"
-                                        placeholder="Street, city, state" required></textarea>
-                                    <div class="invalid-feedback">Please enter your residential address.</div>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label">Address for Mailing <span
-                                            class="opt">(optional)</span></label>
-                                    <textarea class="form-control" id="mailingAddress" rows="2"
-                                        placeholder="If different from residential address"></textarea>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- 05 Property -->
-                        <div class="col-12 form-section">
-                            <div class="form-section-label">
-                                <span class="num">05</span>
-                                <div class="txt">
-                                    <h6>Property Details</h6>
-                                </div>
-                                <span class="rule"></span>
-                            </div>
+    <div class="modal fade" id="propertyModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
 
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <label class="form-label">Names to be used on Title Document(s)</label>
-                                    <input type="text" id="titleNames" class="form-control"
-                                        placeholder="Full legal name(s) for title" required>
-                                    <div class="invalid-feedback">Please enter the name(s) for the title document.
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary text-white">
+                    <img class="brand-form" src="/images/IMG-20260713-WA0003-removebg-preview.png"
+                        alt="eket cinema logo">
+                    <h4 class="modal-title">
+                        Sales Form,
+                        <span class="sub">Eket Cinema Mall.</span>
+                    </h4>
+
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="estateForm" class="needs-validation" novalidate>
+
+                        <div class="row g-3">
+
+                            <!-- 01 Particulars -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">01</span>
+                                    <div class="txt">
+                                        <h6>Particulars of Client(s)</h6>
                                     </div>
+                                    <span class="rule"></span>
                                 </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Property Designation</label>
-                                    <input type="text" id="propertyDesignation" class="form-control"
-                                        placeholder="e.g. Plot 14, Fairway Close" required>
-                                    <div class="invalid-feedback">Please enter the property designation.</div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label">Property Size</label>
-                                    <input type="text" id="propertySize" class="form-control" placeholder="e.g. 600 sqm"
-                                        required>
-                                    <div class="invalid-feedback">Please enter the property size.</div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- 06 Confirmation -->
-                        <div class="col-12 form-section mb-0">
-                            <div class="form-section-label">
-                                <span class="num">06</span>
-                                <div class="txt">
-                                    <h6>Date & Confirmation</h6>
-                                </div>
-                                <span class="rule"></span>
-                            </div>
-
-                            <div class="row g-3">
-                                <div class="col-md-5">
-                                    <label class="form-label">Date</label>
-                                    <input type="date" id="date" class="form-control" required>
-                                    <div class="invalid-feedback">Please select a date.</div>
-                                </div>
-                                <div class="col-md-7">
-                                    <div class="confirm-block">
-                                        <div class="q">I am ready to purchase a property with <b>Eket Cinema
-                                                Mall</b></div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="clientConfirmation"
-                                                id="clientYes" value="Yes" required>
-                                            <label class="form-check-label" for="clientYes">Yes</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="clientConfirmation"
-                                                id="clientNo" value="No" required>
-                                            <label class="form-check-label" for="clientNo">No</label>
-                                        </div>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Surname</label>
+                                        <input type="text" id="surname" class="form-control" placeholder="e.g. Udoh"
+                                            required>
+                                        <div class="invalid-feedback">Please enter the surname.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Other Names</label>
+                                        <input type="text" id="otherNames" class="form-control"
+                                            placeholder="e.g. Ememobong Grace" required>
+                                        <div class="invalid-feedback">Please enter other names.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Title</label>
+                                        <input type="text" id="title" class="form-control"
+                                            placeholder="e.g. Mr / Mrs / Chief" required>
+                                        <div class="invalid-feedback">Please enter a title.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Position</label>
+                                        <input type="text" id="position" class="form-control"
+                                            placeholder="e.g. Managing Director" required>
+                                        <div class="invalid-feedback">Please enter a position.</div>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- 02 Company -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">02</span>
+                                    <div class="txt">
+                                        <h6>Company / Business Information</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label">Name of Company/Firm <span
+                                                class="opt">(optional)</span></label>
+                                        <input type="text" id="companyName" class="form-control"
+                                            placeholder="Company or firm name">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Business Address <span
+                                                class="opt">(optional)</span></label>
+                                        <textarea class="form-control" id="businessAddress" rows="2"
+                                            placeholder="Street, city, state"></textarea>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">P.O Box</label>
+                                        <input type="text" id="poBox" class="form-control" placeholder="P.O Box number">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Post Office Box <span class="opt">(if
+                                                any)</span></label>
+                                        <input type="text" id="postBox" class="form-control"
+                                            placeholder="Post office box">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 03 Contact -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">03</span>
+                                    <div class="txt">
+                                        <h6>Contact Information</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Telephone Number</label>
+                                        <input type="tel" id="telephone" class="form-control" placeholder="08012345678"
+                                            required>
+                                        <div class="invalid-feedback">Please enter a telephone number.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Mobile</label>
+                                        <input type="tel" id="mobile" class="form-control" placeholder="08012345678"
+                                            required>
+                                        <div class="invalid-feedback">Please enter a mobile number.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" id="email" class="form-control"
+                                            placeholder="example@gmail.com" required>
+                                        <div class="invalid-feedback">Please enter a valid email.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Business Email <span
+                                                class="opt">(optional)</span></label>
+                                        <input type="email" id="businessEmail" class="form-control"
+                                            placeholder="business@example.com">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 04 Residential -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">04</span>
+                                    <div class="txt">
+                                        <h6>Residential Information</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label">Residential Address</label>
+                                        <textarea class="form-control" id="residentialAddress" rows="2"
+                                            placeholder="Street, city, state" required></textarea>
+                                        <div class="invalid-feedback">Please enter your residential address.</div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Address for Mailing <span
+                                                class="opt">(optional)</span></label>
+                                        <textarea class="form-control" id="mailingAddress" rows="2"
+                                            placeholder="If different from residential address"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 05 Property -->
+                            <div class="col-12 form-section">
+                                <div class="form-section-label">
+                                    <span class="num">05</span>
+                                    <div class="txt">
+                                        <h6>Property Details</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label class="form-label">Names to be used on Title Document(s)</label>
+                                        <input type="text" id="titleNames" class="form-control"
+                                            placeholder="Full legal name(s) for title" required>
+                                        <div class="invalid-feedback">Please enter the name(s) for the title document.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Property Designation</label>
+                                        <input type="text" id="propertyDesignation" class="form-control"
+                                            placeholder="e.g. Plot 14, Fairway Close" required>
+                                        <div class="invalid-feedback">Please enter the property designation.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Property Size</label>
+                                        <input type="text" id="propertySize" class="form-control"
+                                            placeholder="e.g. 600 sqm" required>
+                                        <div class="invalid-feedback">Please enter the property size.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 06 Confirmation -->
+                            <div class="col-12 form-section mb-0">
+                                <div class="form-section-label">
+                                    <span class="num">06</span>
+                                    <div class="txt">
+                                        <h6>Date & Confirmation</h6>
+                                    </div>
+                                    <span class="rule"></span>
+                                </div>
+
+                                <div class="row g-3">
+                                    <div class="col-md-5">
+                                        <label class="form-label">Date</label>
+                                        <input type="date" id="date" class="form-control" required>
+                                        <div class="invalid-feedback">Please select a date.</div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="confirm-block">
+                                            <div class="q">I am ready to purchase a property with <b>Eket Cinema
+                                                    Mall</b></div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="clientConfirmation"
+                                                    id="clientYes" value="Yes" required>
+                                                <label class="form-check-label" for="clientYes">Yes</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="clientConfirmation"
+                                                    id="clientNo" value="No" required>
+                                                <label class="form-check-label" for="clientNo">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div>
+                    </form>
 
-                </form>
-
-            </div>
-
-            <div class="modal-footer flex-column align-items-stretch">
-
-                <div class="accuracy-note mb-3">
-                    Please ensure all information provided above is accurate before submitting. Details entered here
-                    will be used to prepare your official purchase and title documents.
                 </div>
 
-                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-                    <div id="formMessage" class="fw-semibold"></div>
+                <div class="modal-footer flex-column align-items-stretch">
 
-                    <div class="d-flex gap-2 ms-auto">
-                        <button class="btn btn-secondary" data-bs-dismiss="modal">
-                            Close
-                        </button>
-
-                        <button class="btn btn-success" type="submit" form="estateForm">
-                            Submit Request
-                        </button>
+                    <div class="accuracy-note mb-3">
+                        Please ensure all information provided above is accurate before submitting. Details entered here
+                        will be used to prepare your official purchase and title documents.
                     </div>
+
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                        <div id="formMessage" class="fw-semibold"></div>
+
+                        <div class="d-flex gap-2 ms-auto">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                Close
+                            </button>
+
+                            <button class="btn btn-success" type="submit" form="estateForm">
+                                Submit Request
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
-
     </div>
-</div>
 
 
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-<script>
-    window.addEventListener("DOMContentLoaded", function () {
-        if (window.lucide) {
-            window.lucide.createIcons();
-        }
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+        });
+    </script>
 
 
-<script>
+    <script>
 
-    const backToTop = document.getElementById("backToTop");
+        const backToTop = document.getElementById("backToTop");
 
-    window.addEventListener("scroll", () => {
+        window.addEventListener("scroll", () => {
 
-        if (window.scrollY > 300) {
-            backToTop.style.display = "flex";
-        } else {
-            backToTop.style.display = "none";
-        }
+            if (window.scrollY > 300) {
+                backToTop.style.display = "flex";
+            } else {
+                backToTop.style.display = "none";
+            }
 
-    });
-
-    backToTop.addEventListener("click", () => {
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
         });
 
-    });
-</script>
+        backToTop.addEventListener("click", () => {
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        });
+    </script>
 
 
-<script>
-    const form = document.getElementById('estateForm');
-    const msg = document.getElementById('formMessage');
+    <script>
+        const form = document.getElementById('estateForm');
+        const msg = document.getElementById('formMessage');
 
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-        if (!form.checkValidity()) {
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                msg.textContent = 'Please complete all required fields.';
+                msg.style.color = '#B3413A';
+                const firstInvalid = form.querySelector(':invalid');
+                if (firstInvalid) firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
+
             form.classList.add('was-validated');
-            msg.textContent = 'Please complete all required fields.';
-            msg.style.color = '#B3413A';
-            const firstInvalid = form.querySelector(':invalid');
-            if (firstInvalid) firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            return;
+            msg.style.color = '#265C46';
+            msg.textContent = 'Submitted successfully — thank you.';
+
+            setTimeout(() => { bootstrap.Modal.getInstance(document.getElementById('propertyModal')).hide(); form.reset(); form.classList.remove('was-validated'); msg.textContent = ''; }, 1200);
+        });
+    </script>
+
+
+    <script>
+        // Smooth in-page scrolling for every suite link (works even without CSS scroll-behavior support)
+        document.querySelectorAll('.smk-suite-link').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var targetId = link.getAttribute('href');
+                var target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    history.pushState(null, '', targetId);
+                }
+            });
+        });
+
+        // Highlight the active suite link as the user scrolls
+        var sections = document.querySelectorAll('.smk-suite-section');
+        var navLinks = document.querySelectorAll('.smk-suite-link');
+
+        function setActive() {
+            var scrollPos = window.scrollY + 140;
+            var currentId = sections[0] ? sections[0].id : null;
+            sections.forEach(function (section) {
+                if (section.offsetTop <= scrollPos) {
+                    currentId = section.id;
+                }
+            });
+            navLinks.forEach(function (link) {
+                link.classList.toggle('smk-active', link.getAttribute('href') === '#' + currentId);
+            });
         }
 
-        form.classList.add('was-validated');
-        msg.style.color = '#265C46';
-        msg.textContent = 'Submitted successfully — thank you.';
+        window.addEventListener('scroll', setActive);
+        window.addEventListener('load', setActive);
+    </script>
 
-        setTimeout(() => { bootstrap.Modal.getInstance(document.getElementById('propertyModal')).hide(); form.reset(); form.classList.remove('was-validated'); msg.textContent = ''; }, 1200);
-    });
-</script>
-
-
-<script>
-    // Smooth in-page scrolling for every suite link (works even without CSS scroll-behavior support)
-    document.querySelectorAll('.smk-suite-link').forEach(function (link) {
-        link.addEventListener('click', function (e) {
-            var targetId = link.getAttribute('href');
-            var target = document.querySelector(targetId);
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                history.pushState(null, '', targetId);
-            }
-        });
-    });
-
-    // Highlight the active suite link as the user scrolls
-    var sections = document.querySelectorAll('.smk-suite-section');
-    var navLinks = document.querySelectorAll('.smk-suite-link');
-
-    function setActive() {
-        var scrollPos = window.scrollY + 140;
-        var currentId = sections[0] ? sections[0].id : null;
-        sections.forEach(function (section) {
-            if (section.offsetTop <= scrollPos) {
-                currentId = section.id;
-            }
-        });
-        navLinks.forEach(function (link) {
-            link.classList.toggle('smk-active', link.getAttribute('href') === '#' + currentId);
-        });
-    }
-
-    window.addEventListener('scroll', setActive);
-    window.addEventListener('load', setActive);
-</script>
-
-<script src="/facility.js"></script>
+    <script src="/facility.js"></script>
 </body>
 
 </html>
