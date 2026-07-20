@@ -13,6 +13,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -32,7 +34,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: var(--graphite);
     background: var(--paper);
     line-height: 1.65;
@@ -45,7 +47,7 @@ h2,
 h3,
 h4,
 .display-font {
-    font-family: 'Fraunces', Georgia, serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: var(--ink);
     letter-spacing: -0.01em;
     font-weight: 700;
